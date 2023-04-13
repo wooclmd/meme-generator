@@ -1,0 +1,80 @@
+/* Navbar section */
+body {
+  font-family: "Karla";
+  margin: 0;
+}
+
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 40px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left > img {
+  height: 45px;
+  margin-right: 10px;
+}
+
+.navbar-left > p {
+  font-weight: bold;
+  color: white;
+  font-size: 28px;
+  letter-spacing: -2px;
+}
+
+.navbar-right > p {
+  color: white;
+  font-size: 18px;
+}
+
+/* form section */
+
+.form {
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(40px, auto);
+  /* grid-template: 40px 40px/ 1fr 1fr; */
+  /* 第一個代表row, 第二個代表column */
+  grid-gap: 17px;
+}
+
+.form > input {
+  font-family: "Karla";
+  font-size: 18px;
+  outline: none;
+  border: 0.5px solid #d5d4d8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-btn {
+  grid-column: 1/-1;
+  font-family: "Karla";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-btn > img {
+  height: 20px;
+}
