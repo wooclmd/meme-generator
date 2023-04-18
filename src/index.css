@@ -1,7 +1,12 @@
 /* Navbar section */
+
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Karla";
   margin: 0;
+  padding-bottom: 50px;
 }
 
 navbar {
@@ -61,9 +66,6 @@ navbar {
 .form-btn {
   grid-column: 1/-1;
   font-family: "Karla";
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   border: none;
   color: white;
@@ -77,4 +79,45 @@ navbar {
 
 .form-btn > img {
   height: 20px;
+  margin-left: 5px;
+}
+
+/* meme image section */
+
+.meme {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.memeImg {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
