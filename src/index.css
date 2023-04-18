@@ -93,7 +93,8 @@ navbar {
 
 .memeImg {
   max-width: 100%;
-  border-radius: 3px;
+
+  border-radius: 5px;
 }
 
 .meme-text {
